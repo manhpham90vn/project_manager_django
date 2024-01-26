@@ -51,18 +51,23 @@ python manage.py shell
 
 ## Trigger task from shell
 ```shell
-from worker.tasks import execute_sync
-execute_sync()
+from worker.tasks import invoke_lambda
+invoke_lambda.delay()
 ```
 
-## Run celery
+## Run celery worker 1
 ```shell
-celery -A djangoCeleryDemo worker --hostname=worker1 -l INFO
+celery -A projectmanager worker --hostname=worker1 -l INFO
+```
+
+## Run celery worker 2
+```shell
+celery -A projectmanager worker --hostname=worker2 -l INFO
 ```
 
 ## Run flower
 ```shell
-celery -A djangoCeleryDemo flower -l INFO
+celery -A projectmanager flower -l INFO
 ```
 
 ## View flower
