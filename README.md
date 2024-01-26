@@ -83,6 +83,11 @@ from worker.tasks import invoke_lambda
 invoke_lambda.delay()
 ```
 
+### Make migrate
+```shell
+python manage.py makemigrations
+```
+
 ### Apply migrate
 ```shell
 python manage.py migrate
