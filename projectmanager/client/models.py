@@ -9,4 +9,7 @@ class Client(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.name
+        return f'{self.name} - {self.email} - {self.phone} - {self.created_at} - {self.updated_at}'
+    
+    class Meta:
+        db_table = 'clients'

@@ -5,8 +5,6 @@
       <th>Name</th>
       <th>Email</th>
       <th>Phone</th>
-      <th>Create At</th>
-      <th>Update At</th>
       <th>Actions</th>
     </tr>
   </thead>
@@ -17,12 +15,9 @@
       <td>{{ client.name }}</td>
       <td>{{ client.email }}</td>
       <td>{{ client.phone }}</td>
-      <td>{{ client.create_at }}</td>
-      <td>{{ client.update_at }}</td>
       <td>
-        <a href="update/{{ client.id }}"
-          >Edit</a
-        >
+        <a href="show/{{ client.id }}">Show</a>
+        <a href="update/{{ client.id }}">Edit</a>
         <a href="delete/{{ client.id }}">Delete</a>
       </td>
     </tr>
