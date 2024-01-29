@@ -33,14 +33,17 @@ ALLOWED_HOSTS = ["0.0.0.0", "localhost"]
 # Application definition
 
 INSTALLED_APPS = [
+    # default apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'worker.apps.WorkerConfig',
+    # custom apps
     'home.apps.HomeConfig',
+    'worker.apps.WorkerConfig',
+    'client.apps.ClientConfig'
 ]
 
 MIDDLEWARE = [

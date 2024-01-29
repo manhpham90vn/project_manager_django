@@ -85,7 +85,7 @@ invoke_lambda.delay()
 
 ### Make migrate
 ```shell
-python manage.py makemigrations
+python manage.py makemigrations home
 ```
 
 ### Apply migrate
