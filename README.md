@@ -97,3 +97,8 @@ python manage.py migrate
 ```shell
 python manage.py createsuperuser
 ```
+
+### Collect static file
+```shell
+python manage.py collectstatic
+```
