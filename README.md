@@ -35,17 +35,17 @@ pip install -r requirements.txt
 
 ### Run celery worker 1
 ```shell
-celery -A projectmanager worker --hostname=worker1 -l INFO
+celery -A project_manager_django worker --hostname=worker1 -l INFO
 ```
 
 ### Run celery worker 2
 ```shell
-celery -A projectmanager worker --hostname=worker2 -l INFO
+celery -A project_manager_django worker --hostname=worker2 -l INFO
 ```
 
 ### Run flower
 ```shell
-celery -A projectmanager flower -l INFO
+celery -A project_manager_django flower -l INFO
 ```
 
 ### View flower
