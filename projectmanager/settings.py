@@ -42,8 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # custom apps
     'worker.apps.WorkerConfig',
-    'client.apps.ClientConfig',
-    'learnDjango.apps.LearndjangoConfig',
+    'client.apps.ClientConfig'
 ]
 
 MIDDLEWARE = [
