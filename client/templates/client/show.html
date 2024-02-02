@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div>{{ client.name }}</div>
-    <div>{{ client.email }}</div>
-    <div>{{ client.phone }}</div>
-    <div>{{ client.created_at }}</div>
-    <div>{{ client.updated_at }}</div>
-  </body>
-</html>
+{% extends 'base.html' %}
+{% block title %}Detail{% endblock %}
+{% block content%}
+<div>{{ client.name }}</div>
+<div>{{ client.email }}</div>
+<div>{{ client.phone }}</div>
+<div>{{ client.created_at }}</div>
+<div>{{ client.updated_at }}</div>
+{% endblock %}
