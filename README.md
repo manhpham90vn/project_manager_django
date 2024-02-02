@@ -2,7 +2,9 @@
 
 ## Version
 ```shell
-Python 3.9.18
+Python 3.12.1
+Django 5.0.1
+Celery 5.3.6
 ```
 
 ## ENV
